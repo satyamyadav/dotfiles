@@ -1,3 +1,4 @@
+
 !! Colorscheme
 
 ! special
@@ -54,6 +55,9 @@ URxvt.scrollBar_right: false
 URxvt.urgentOnBell: true
 URxvt.depth: 24
 URxvt.iso14755: false
+URxvt.transparent: true
+URxvt.shading: 8
+
 
 !! Common Keybinds for Navigations
 URxvt.keysym.Shift-Up: command:\033]720;1\007

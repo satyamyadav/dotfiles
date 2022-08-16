@@ -25,3 +25,16 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+
+
+if [ -d "$HOME/.config/awesome/" ] ; then
+	h=`date +%H`
+	rm -rf $HOME/.config/awesome/themes/multicolor/wall.png
+	ln -s $HOME/Wallpapers/walls/simple/wallbase_$h.jpg $HOME/.config/awesome/themes/multicolor/wall.png
+	# if [ $h -lt 22 ] && [ $h -gt 7 ]; then
+	#  export WALLDIR="simple"
+	# else
+	#  export WALLDIR="xplicit"
+	# fi
+fi
